@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="section-about">
+      <div id="head">
+        <div class="intro">
+          <h1>Kairat Kempirbaev</h1>
+          <span>Software Engineer</span>
+          <p>The one who codes</p>
+        </div>
+        <div class="heart-container">
+          <svg
+            id="spin-me"
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            fill="red"
+            class="bi bi-suit-heart-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div id="body">
+        <div id="skills">
+          <h2><i class="bi bi-journal-bookmark-fill"></i>Skills</h2>
+          <table class="table">
+            <tr>
+              <td>Web Stack:</td>
+              <td>
+                <span>JS(React,Node), Python(Django)</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Operating Systems:</td>
+              <td>Unix, Windows, Android</td>
+            </tr>
+            <tr>
+              <td>Languages</td>
+              <td>Python, JS/HTML/CSS,C++,Shell,SQL,JAVA,ASM</td>
+            </tr>
+          </table>
+        </div>
+        <div class="experience">
+          <h2>Specialisation</h2>
+          <table class="table">
+            <tr>
+              <td>Machine Learning. Strong Math background</td>
+            </tr>
+            <tr>
+              <td>Hardware and Software levels expertise</td>
+            </tr>
+            <tr>
+              <td>Algorithm Analysis: Computation Geometry/Cryptography/Graph Theory/Numerical Optimization</td>
+            </tr>
+            <tr>
+              <td>IT/Security/Network Administration experience</td>
+            </tr>
+          </table>
+        </div>
+        <div class="hobbies">
+          <h1><i style="color: #846902" class="bi bi-star-fill"></i>Hobbies</h1>
+          <div id="hobbies">
+            <div>
+              <h1><i class="bi bi-puzzle"></i></h1>
+              <p>Puzzles</p>
+            </div>
+            <div>
+              <h1><i class="bi bi-controller"></i></h1>
+              <p>Games</p>
+            </div>
+            <div>
+              <h1><i class="bi bi-book"></i></h1>
+              <p>Books</p>
+            </div>
+            <div>
+              <h1><i class="bi bi-music-note-beamed"></i></h1>
+              <p>Music</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>Make an Issue or Pull Request to contact.</p>
+    </footer>
+  </body>
+  <style>
+    .experience{
+      background-color: rgb(238, 238, 238);
+    }
+    #hobbies {
+      font-family: "Montserrat", sans-serif;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    #hobbies div {
+      width: 60px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .intro {
+      font-style: sans-serif;
+      font-size: 40;
+      text-align: center;
+    }
+    .heart-container {
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: center;
+      width: 100px;
+      height: 100px;
+    }
+    #spin-me {
+      margin: auto;
+    }
+    #section-about {
+      gap: 30px;
+      justify-content: space-between;
+      width: 100%;
+      height: auto;
+      min-height:100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    #head {
+      order: 1;
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    #body {
+      order: 2;
+      flex-grow: 6;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    #body > div{
+      margin:15px 0;
+      padding:15px 0;
+    }
+    /* Responsive layout - makes a one column layout instead of a two-column layout */
+    @media (max-width: 800px) {
+      #section-about {
+        flex-direction: column;
+      }
+    }
+    body{
+      display:flex;
+      flex-direction:column;
+      justify-content: space-between;
+      min-height:100vh;
+    }
+    footer {
+      height:80px;
+      width:100%;
+      padding:30px;
+      background-color: #f2f2f2;
+      text-align: center;
+    }
+  </style>
+  <script>
+    gsap.to("#spin-me", {
+      keyframes: {
+        "25%": { width: "50px", height: "50px" },
+        "35%": { width: "75px", height: "75px" },
+        "50%": { width: "50px", height: "50px" },
+        "65%": { width: "75px", height: "75px" },
+        "75%": { width: "50px", height: "50px" },
+      },
+      ease: "none",
+      duration: 1,
+      repeat: -1,
+    });
+  </script>
+</html>
