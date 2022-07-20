@@ -24,15 +24,14 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <header>
-      
-    </header>
+    <div id="root"></div>
     <div id="section-about">
       <div id="head">
         <div class="intro">
           <h1>Kairat Kempirbaev</h1>
-          <span>Software Engineer</span>
-          <p>The one who codes</p>
+          <p><span class="strikethrough">Rockstar Programmer</span></p>
+          <p><span class="strikethrough-double">^*[ -][Dd]eveloper$</span></p>
+          <h4>Software Engineer</h4>
         </div>
         <div class="heart-container">
           <svg
@@ -80,7 +79,10 @@
               <td>Hardware and Software levels expertise</td>
             </tr>
             <tr>
-              <td>Algorithm Analysis: Computation Geometry/Cryptography/Graph Theory/Numerical Optimization</td>
+              <td>
+                Algorithm Analysis: Computation Geometry/Cryptography/Graph
+                Theory/Numerical Optimization
+              </td>
             </tr>
             <tr>
               <td>IT/Security/Network Administration experience</td>
@@ -115,7 +117,7 @@
     </footer>
   </body>
   <style>
-    .experience{
+    .experience {
       background-color: rgb(238, 238, 238);
     }
     #hobbies {
@@ -151,16 +153,15 @@
       margin: auto;
     }
     #section-about {
-      gap: 30px;
-      justify-content: space-between;
       width: 100%;
       height: auto;
-      min-height:100%;
+      min-height: 100%;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
     }
     #head {
+      background-color: rgb(238, 238, 238);
       order: 1;
       flex-grow: 1;
       display: flex;
@@ -174,9 +175,9 @@
       flex-direction: column;
       justify-content: space-between;
     }
-    #body > div{
-      margin:15px 0;
-      padding:15px 0;
+    #body > div {
+      margin: 15px 0;
+      padding: 15px 0;
     }
     /* Responsive layout - makes a one column layout instead of a two-column layout */
     @media (max-width: 800px) {
@@ -184,18 +185,56 @@
         flex-direction: column;
       }
     }
-    body{
-      display:flex;
-      flex-direction:column;
+    body {
+      display: flex;
+      flex-direction: column;
       justify-content: space-between;
-      min-height:100vh;
+      min-height: 100vh;
     }
     footer {
-      height:80px;
-      width:100%;
-      padding:30px;
+      height: 80px;
+      width: 100%;
+      padding: 30px;
       background-color: #f2f2f2;
       text-align: center;
+    }
+    .strikethrough{
+      position:relative;
+      font-size: 25px;
+    }
+    .strikethrough:before {
+      position:absolute;
+      content: "";
+      left: 0;
+      top: 65%;
+      transform: translateY(-2px);
+      right: 0;
+      border-color: currentcolor #eb4c4c #eb4c4c;
+      border-top: 1px solid #eb4c4c;
+    }
+    .strikethrough-double{
+      position:relative;
+      font-size: 25px;
+    }
+    .strikethrough-double:before {
+      position:absolute;
+      content: "";
+      left: 0;
+      top: 45%;
+      transform: translateY(-2px);
+      right: 0;
+      border-color: currentcolor #eb4c4c #eb4c4c;
+      border-top: 1px solid #eb4c4c;
+    }
+    .strikethrough-double:after {
+      position:absolute;
+      content: "";
+      left: 0;
+      top: 75%;
+      transform: translateY(-2px);
+      right: 0;
+      border-color: currentcolor #eb4c4c #eb4c4c;
+      border-top: 1px solid #eb4c4c;
     }
   </style>
   <script>
